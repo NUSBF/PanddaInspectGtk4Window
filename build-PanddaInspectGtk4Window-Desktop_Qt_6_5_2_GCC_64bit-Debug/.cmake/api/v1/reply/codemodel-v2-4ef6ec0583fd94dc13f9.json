@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "PanddaInspectGtk4Window",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "PanddaInspectGtk4Window::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PanddaInspectGtk4Window-Debug-fe002aafc995375416d7.json",
+					"name" : "PanddaInspectGtk4Window",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PanddaInspectGtk4Window_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PanddaInspectGtk4Window_autogen-Debug-a82eab45d559fd52294e.json",
+					"name" : "PanddaInspectGtk4Window_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PanddaInspectGtk4Window_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PanddaInspectGtk4Window_autogen_timestamp_deps-Debug-b0b73f639bb5adef6570.json",
+					"name" : "PanddaInspectGtk4Window_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/namlb/Documents/QT/PanddaInspectGtk4Window/build-PanddaInspectGtk4Window-Desktop_Qt_6_5_2_GCC_64bit-Debug",
+		"source" : "/home/namlb/Documents/QT/PanddaInspectGtk4Window"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
