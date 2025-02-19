@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.38.2 -->
+<!-- Generated with glade 3.40.0 -->
 <interface>
   <requires lib="gtk+" version="3.24"/>
+  <object class="GtkRadioButton" id="MarkEvent">
+    <property name="label" translatable="yes">radiobutton</property>
+    <property name="visible">True</property>
+    <property name="can-focus">True</property>
+    <property name="receives-default">False</property>
+    <property name="active">True</property>
+    <property name="draw-indicator">True</property>
+  </object>
+  <object class="GtkRadioButton" id="RadioLigand">
+    <property name="label" translatable="yes">radiobutton</property>
+    <property name="visible">True</property>
+    <property name="can-focus">True</property>
+    <property name="receives-default">False</property>
+    <property name="active">True</property>
+    <property name="draw-indicator">True</property>
+  </object>
+  <object class="GtkRadioButton" id="RadioModel">
+    <property name="label" translatable="yes">radiobutton</property>
+    <property name="visible">True</property>
+    <property name="can-focus">True</property>
+    <property name="receives-default">False</property>
+    <property name="active">True</property>
+    <property name="draw-indicator">True</property>
+  </object>
   <object class="GtkWindow">
     <property name="can-focus">False</property>
-    <property name="default-width">750</property>
-    <property name="default-height">400</property>
+    <property name="default-width">690</property>
+    <property name="default-height">750</property>
     <child>
       <object class="GtkFixed">
         <property name="visible">True</property>
@@ -17,7 +41,6 @@
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="margin-right">11</property>
-            <property name="margin-top">4</property>
             <property name="label" translatable="yes">Go to Dataset:</property>
           </object>
           <packing>
@@ -27,14 +50,15 @@
         </child>
         <child>
           <object class="GtkTextView">
-            <property name="width-request">200</property>
+            <property name="width-request">240</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
+            <property name="pixels-above-lines">6</property>
           </object>
           <packing>
             <property name="x">110</property>
-            <property name="y">15</property>
+            <property name="y">10</property>
           </packing>
         </child>
         <child>
@@ -47,14 +71,14 @@
             <property name="receives-default">True</property>
           </object>
           <packing>
-            <property name="x">330</property>
-            <property name="y">15</property>
+            <property name="x">358</property>
+            <property name="y">10</property>
           </packing>
         </child>
         <child>
           <object class="GtkButton" id="gtkButtonPrevSite">
             <property name="label" translatable="yes">&lt;&lt;&lt; Go To Prev Site &lt;&lt;&lt;</property>
-            <property name="width-request">100</property>
+            <property name="width-request">190</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
@@ -62,27 +86,27 @@
           </object>
           <packing>
             <property name="x">10</property>
-            <property name="y">60</property>
+            <property name="y">50</property>
           </packing>
         </child>
         <child>
           <object class="GtkButton" id="gtkButtonNextSite">
             <property name="label" translatable="yes">&gt;&gt;&gt; Go To Next Site &gt;&gt;&gt;</property>
-            <property name="width-request">100</property>
+            <property name="width-request">190</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
           </object>
           <packing>
-            <property name="x">210</property>
-            <property name="y">60</property>
+            <property name="x">220</property>
+            <property name="y">50</property>
           </packing>
         </child>
         <child>
           <object class="GtkButton" id="gtkButtonNextUnviewed">
             <property name="label" translatable="yes">&gt;&gt;&gt; Go To Next Unviewed</property>
-            <property name="width-request">390</property>
+            <property name="width-request">400</property>
             <property name="height-request">30</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
@@ -90,7 +114,145 @@
           </object>
           <packing>
             <property name="x">10</property>
-            <property name="y">110</property>
+            <property name="y">90</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">260</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Overall Inspection Event / Site progress</property>
+          </object>
+          <packing>
+            <property name="x">420</property>
+            <property name="y">10</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">20</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Of</property>
+          </object>
+          <packing>
+            <property name="x">570</property>
+            <property name="y">50</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">50</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Site</property>
+          </object>
+          <packing>
+            <property name="x">420</property>
+            <property name="y">90</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">20</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Of</property>
+          </object>
+          <packing>
+            <property name="x">570</property>
+            <property name="y">90</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">50</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Event</property>
+          </object>
+          <packing>
+            <property name="x">420</property>
+            <property name="y">50</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView">
+            <property name="width-request">80</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+          </object>
+          <packing>
+            <property name="x">480</property>
+            <property name="y">50</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView">
+            <property name="width-request">80</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+          </object>
+          <packing>
+            <property name="x">480</property>
+            <property name="y">90</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView">
+            <property name="width-request">80</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+          </object>
+          <packing>
+            <property name="x">600</property>
+            <property name="y">50</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView">
+            <property name="width-request">80</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+          </object>
+          <packing>
+            <property name="x">600</property>
+            <property name="y">90</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="gtkTextViewResponse">
+            <property name="width-request">260</property>
+            <property name="height-request">280</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+          </object>
+          <packing>
+            <property name="x">420</property>
+            <property name="y">140</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">200</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Dataset ID</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">140</property>
           </packing>
         </child>
         <child>
@@ -99,130 +261,554 @@
             <property name="height-request">30</property>
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="margin-top">4</property>
-            <property name="label" translatable="yes">Overall Inspection Event/Site progress</property>
-          </object>
-          <packing>
-            <property name="x">420</property>
-            <property name="y">15</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel">
-            <property name="width-request">20</property>
-            <property name="height-request">30</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="margin-top">4</property>
-            <property name="label" translatable="yes">Of</property>
-          </object>
-          <packing>
-            <property name="x">570</property>
-            <property name="y">60</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel">
-            <property name="width-request">50</property>
-            <property name="height-request">30</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="margin-top">4</property>
-            <property name="label" translatable="yes">Site</property>
-          </object>
-          <packing>
-            <property name="x">420</property>
-            <property name="y">110</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel">
-            <property name="width-request">20</property>
-            <property name="height-request">30</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="margin-top">4</property>
-            <property name="label" translatable="yes">Of</property>
-          </object>
-          <packing>
-            <property name="x">570</property>
-            <property name="y">110</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel">
-            <property name="width-request">50</property>
-            <property name="height-request">30</property>
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="margin-top">4</property>
-            <property name="label" translatable="yes">Event</property>
-          </object>
-          <packing>
-            <property name="x">420</property>
-            <property name="y">60</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkTextView">
-            <property name="width-request">80</property>
-            <property name="height-request">30</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-          </object>
-          <packing>
-            <property name="x">480</property>
-            <property name="y">60</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkTextView">
-            <property name="width-request">80</property>
-            <property name="height-request">30</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-          </object>
-          <packing>
-            <property name="x">480</property>
-            <property name="y">110</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkTextView">
-            <property name="width-request">80</property>
-            <property name="height-request">30</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-          </object>
-          <packing>
-            <property name="x">600</property>
-            <property name="y">60</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkTextView">
-            <property name="width-request">80</property>
-            <property name="height-request">30</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-          </object>
-          <packing>
-            <property name="x">600</property>
-            <property name="y">110</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkTextView" id="gtkTextViewResponse">
-            <property name="width-request">700</property>
-            <property name="height-request">200</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="margin-right">458</property>
-            <property name="margin-bottom">354</property>
+            <property name="label" translatable="yes">Z-blob Peak</property>
           </object>
           <packing>
             <property name="x">10</property>
-            <property name="y">200</property>
+            <property name="y">290</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">1 -BDC</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Map Uncertainty</property>
+          </object>
+          <packing>
+            <property name="x">210</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Resolution</property>
+          </object>
+          <packing>
+            <property name="x">210</property>
+            <property name="y">210</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Z-blob Size</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">330</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="gtkTextViewDatasetID">
+            <property name="width-request">200</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="pixels-above-lines">6</property>
+            <property name="justification">center</property>
+            <property name="monospace">True</property>
+          </object>
+          <packing>
+            <property name="x">210</property>
+            <property name="y">140</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="gtkTextViewEventNumber">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="pixels-above-lines">6</property>
+            <property name="justification">center</property>
+            <property name="monospace">True</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">210</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">200</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Event Information:</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">175</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">200</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Dataset Information:</property>
+          </object>
+          <packing>
+            <property name="x">210</property>
+            <property name="y">175</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="gtkTextViewBTC">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="pixels-above-lines">6</property>
+            <property name="justification">center</property>
+            <property name="monospace">True</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="gtkTextViewBlobPeak">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="pixels-above-lines">6</property>
+            <property name="justification">center</property>
+            <property name="monospace">True</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">290</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="gtkTextViewBlobSize">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="pixels-above-lines">6</property>
+            <property name="justification">center</property>
+            <property name="monospace">True</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">330</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">R-Free / R-work</property>
+          </object>
+          <packing>
+            <property name="x">210</property>
+            <property name="y">290</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="gtkTextViewResolution">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="pixels-above-lines">6</property>
+            <property name="justification">center</property>
+            <property name="monospace">True</property>
+          </object>
+          <packing>
+            <property name="x">310</property>
+            <property name="y">210</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="gtkTextViewRFree">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="pixels-above-lines">6</property>
+            <property name="justification">center</property>
+            <property name="monospace">True</property>
+          </object>
+          <packing>
+            <property name="x">310</property>
+            <property name="y">290</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="gtkButtonLoadMtz">
+            <property name="label" translatable="yes">Load mtz file</property>
+            <property name="width-request">190</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">390</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="gtkButtonMergeLigand">
+            <property name="label" translatable="yes">Merge Ligand With Model</property>
+            <property name="width-request">190</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+          <packing>
+            <property name="x">220</property>
+            <property name="y">390</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Event#</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">210</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="gtkTextViewMap">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="pixels-above-lines">6</property>
+            <property name="justification">center</property>
+            <property name="monospace">True</property>
+          </object>
+          <packing>
+            <property name="x">310</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">670</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Record Event Information (This event only)</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">440</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Event Information:</property>
+          </object>
+          <packing>
+            <property name="x">-434</property>
+            <property name="y">16</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="gtkTextViewEventComment">
+            <property name="width-request">550</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="pixels-above-lines">6</property>
+            <property name="justification">center</property>
+            <property name="monospace">True</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">470</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Event#</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">470</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="RadioEventInteresting">
+            <property name="label" translatable="yes">Mark Events as Interesting</property>
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+            <property name="group">MarkEvent</property>
+            <signal name="group-changed" handler="group1" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">515</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="RadioEventNotInteresting">
+            <property name="label" translatable="yes">Mark Events as Not Interesting</property>
+            <property name="width-request">200</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+            <property name="group">MarkEvent</property>
+            <signal name="group-changed" handler="group1" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">550</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="RadioLigandNotPlaced">
+            <property name="label" translatable="yes">No Ligand Placed</property>
+            <property name="width-request">124</property>
+            <property name="height-request">32</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+            <property name="group">RadioLigand</property>
+          </object>
+          <packing>
+            <property name="x">270</property>
+            <property name="y">550</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="RadioLigandPlaced">
+            <property name="label" translatable="yes">Ligand Placed</property>
+            <property name="width-request">105</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+            <property name="group">RadioLigand</property>
+          </object>
+          <packing>
+            <property name="x">270</property>
+            <property name="y">515</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="RadioModelHigh">
+            <property name="label" translatable="yes">Model: High Confidence</property>
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+            <property name="group">RadioModel</property>
+          </object>
+          <packing>
+            <property name="x">480</property>
+            <property name="y">500</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="RadioModelMedium">
+            <property name="label" translatable="yes">Model: Medium Confidence</property>
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+            <property name="group">RadioModel</property>
+          </object>
+          <packing>
+            <property name="x">480</property>
+            <property name="y">530</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="RadioModelLow">
+            <property name="label" translatable="yes">Model: Low Confidence</property>
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="active">True</property>
+            <property name="draw-indicator">True</property>
+            <property name="group">RadioModel</property>
+          </object>
+          <packing>
+            <property name="x">480</property>
+            <property name="y">560</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">670</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Record Site information (for all events with this site)</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">590</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Name:</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">620</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Comment:</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">655</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="gtkTextViewSiteName">
+            <property name="width-request">550</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="pixels-above-lines">6</property>
+            <property name="justification">center</property>
+            <property name="monospace">True</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">620</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="gtkTextViewSiteComment">
+            <property name="width-request">550</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="pixels-above-lines">6</property>
+            <property name="justification">center</property>
+            <property name="monospace">True</property>
+          </object>
+          <packing>
+            <property name="x">110</property>
+            <property name="y">655</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="gtkButtonPreviousDontSave">
+            <property name="label" translatable="yes">&lt;&lt;&lt; Prev &lt;&lt;&lt;
+Don't Save Model</property>
+            <property name="width-request">190</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">695</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="gtkButtonNextDontSave">
+            <property name="label" translatable="yes">&lt;&lt;&lt; Next &lt;&lt;&lt;
+Don't Save Model</property>
+            <property name="width-request">190</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+          <packing>
+            <property name="x">220</property>
+            <property name="y">695</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="gtkButtonNextSave">
+            <property name="label" translatable="yes">&lt;&lt;&lt; Next &lt;&lt;&lt;
+Save Model</property>
+            <property name="width-request">190</property>
+            <property name="height-request">44</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+          <packing>
+            <property name="x">470</property>
+            <property name="y">695</property>
           </packing>
         </child>
       </object>

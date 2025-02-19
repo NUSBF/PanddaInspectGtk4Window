@@ -1,0 +1,5 @@
+/home/linuxhomes/njp158/Documents/QtCreator/PanddaInspectGtk4Window/build/Desktop_Qt_6_8_1-Debug/CMakeFiles/PanddaInspectGtk4Window.dir
+/home/linuxhomes/njp158/Documents/QtCreator/PanddaInspectGtk4Window/build/Desktop_Qt_6_8_1-Debug/CMakeFiles/edit_cache.dir
+/home/linuxhomes/njp158/Documents/QtCreator/PanddaInspectGtk4Window/build/Desktop_Qt_6_8_1-Debug/CMakeFiles/rebuild_cache.dir
+/home/linuxhomes/njp158/Documents/QtCreator/PanddaInspectGtk4Window/build/Desktop_Qt_6_8_1-Debug/CMakeFiles/PanddaInspectGtk4Window_autogen_timestamp_deps.dir
+/home/linuxhomes/njp158/Documents/QtCreator/PanddaInspectGtk4Window/build/Desktop_Qt_6_8_1-Debug/CMakeFiles/PanddaInspectGtk4Window_autogen.dir

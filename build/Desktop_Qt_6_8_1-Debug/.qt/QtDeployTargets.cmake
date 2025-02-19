@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_PanddaInspectGtk4Window_FILE /home/linuxhomes/njp158/Documents/QtCreator/PanddaInspectGtk4Window/build/Desktop_Qt_6_8_1-Debug/PanddaInspectGtk4Window)
+set(__QT_DEPLOY_TARGET_PanddaInspectGtk4Window_TYPE EXECUTABLE)

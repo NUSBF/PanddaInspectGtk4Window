@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkWindow" id="mainWindow">
+    <property name="default-width">750</property>
+    <property name="default-height">400</property>
+    <child>
+      <object class="GtkFixed">
+        <child>
+          <object class="GtkLabel">
+            <layout>
+              <property name="transform">translate(10, 10)</property>
+            </layout>
+            <property name="width-request">90</property>
+            <property name="height-request">30</property>
+            <property name="margin-end">11</property>
+            <property name="margin-top">4</property>
+            <property name="label" translatable="1">Go to Dataset:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkTextView">
+            <layout>
+              <property name="transform">translate(110, 15)</property>
+            </layout>
+            <property name="width-request">200</property>
+            <property name="height-request">30</property>
+            <property name="focusable">1</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="gtkButtonGo">
+            <layout>
+              <property name="transform">translate(330, 15)</property>
+            </layout>
+            <property name="label" translatable="1">GO</property>
+            <property name="width-request">50</property>
+            <property name="height-request">30</property>
+            <property name="focusable">1</property>
+            <property name="receives-default">1</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="gtkButtonPrevSite">
+            <layout>
+              <property name="transform">translate(10, 60)</property>
+            </layout>
+            <property name="label" translatable="1">&lt;&lt;&lt; Go To Prev Site &lt;&lt;&lt;</property>
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="focusable">1</property>
+            <property name="receives-default">1</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="gtkButtonNextSite">
+            <layout>
+              <property name="transform">translate(210, 60)</property>
+            </layout>
+            <property name="label" translatable="1">&gt;&gt;&gt; Go To Next Site &gt;&gt;&gt;</property>
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="focusable">1</property>
+            <property name="receives-default">1</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="gtkButtonNextUnviewed">
+            <layout>
+              <property name="transform">translate(10, 110)</property>
+            </layout>
+            <property name="label" translatable="1">&gt;&gt;&gt; Go To Next Unviewed</property>
+            <property name="width-request">390</property>
+            <property name="height-request">30</property>
+            <property name="focusable">1</property>
+            <property name="receives-default">1</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <layout>
+              <property name="transform">translate(420, 15)</property>
+            </layout>
+            <property name="width-request">100</property>
+            <property name="height-request">30</property>
+            <property name="margin-top">4</property>
+            <property name="label" translatable="1">Overall Inspection Event/Site progress</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <layout>
+              <property name="transform">translate(570, 60)</property>
+            </layout>
+            <property name="width-request">20</property>
+            <property name="height-request">30</property>
+            <property name="margin-top">4</property>
+            <property name="label" translatable="1">Of</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <layout>
+              <property name="transform">translate(420, 110)</property>
+            </layout>
+            <property name="width-request">50</property>
+            <property name="height-request">30</property>
+            <property name="margin-top">4</property>
+            <property name="label" translatable="1">Site</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <layout>
+              <property name="transform">translate(570, 110)</property>
+            </layout>
+            <property name="width-request">20</property>
+            <property name="height-request">30</property>
+            <property name="margin-top">4</property>
+            <property name="label" translatable="1">Of</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <layout>
+              <property name="transform">translate(420, 60)</property>
+            </layout>
+            <property name="width-request">50</property>
+            <property name="height-request">30</property>
+            <property name="margin-top">4</property>
+            <property name="label" translatable="1">Event</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkTextView">
+            <layout>
+              <property name="transform">translate(480, 60)</property>
+            </layout>
+            <property name="width-request">80</property>
+            <property name="height-request">30</property>
+            <property name="focusable">1</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkTextView">
+            <layout>
+              <property name="transform">translate(480, 110)</property>
+            </layout>
+            <property name="width-request">80</property>
+            <property name="height-request">30</property>
+            <property name="focusable">1</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkTextView">
+            <layout>
+              <property name="transform">translate(600, 60)</property>
+            </layout>
+            <property name="width-request">80</property>
+            <property name="height-request">30</property>
+            <property name="focusable">1</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkTextView">
+            <layout>
+              <property name="transform">translate(600, 110)</property>
+            </layout>
+            <property name="width-request">80</property>
+            <property name="height-request">30</property>
+            <property name="focusable">1</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkTextView" id="gtkTextViewResponse">
+            <layout>
+              <property name="transform">translate(10, 200)</property>
+            </layout>
+            <property name="width-request">700</property>
+            <property name="height-request">200</property>
+            <property name="focusable">1</property>
+            <property name="margin-end">458</property>
+            <property name="margin-bottom">354</property>
+          </object>
+        </child>
+        <!-- Integrated Widgets from GTK3 XML -->
+        <child>
+          <object class="GtkCheckButton" id="MarkEvent">
+            <layout>
+              <property name="transform">translate(10, 420)</property>
+            </layout>
+            <property name="label" translatable="yes">radiobutton</property>
+            <property name="focusable">True</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="RadioLigand">
+            <layout>
+              <property name="transform">translate(10, 460)</property>
+            </layout>
+            <property name="label" translatable="yes">radiobutton</property>
+            <property name="focusable">True</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="RadioModel">
+            <layout>
+              <property name="transform">translate(10, 500)</property>
+            </layout>
+            <property name="label" translatable="yes">radiobutton</property>
+            <property name="focusable">True</property>
+          </object>
+        </child>
+        <!-- More widgets from GTK3 XML can be added similarly -->
+      </object>
+    </child>
+  </object>
+</interface>
